@@ -1,30 +1,39 @@
-# Vizify
+# 🧠 ResearchAI Assistant
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+ResearchAI Assistant is a web-based tool that transforms academic papers into accessible content formats—slides, podcast scripts, executive summaries, and visual infographics—powered by **Grok AI** and **Supabase**.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/dumebiis-projects/v0-vizify)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/zR9kZ6YBq3n)
+> ⚡ A weekend-build, vibe-coded to make research shareable and human-friendly.
 
-## Overview
+---
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## ✨ Features
 
-## Deployment
+- 🎙️ Convert papers into podcast scripts
+- 📊 Generate structured presentation slides
+- 📄 Extract concise executive summaries
+- 📈 Create infographic-ready visual content
+- 📤 Upload `.pdf`, `.docx`, `.txt`, or paste raw text
+- 🔐 Email-based authentication (Supabase)
+- 🌙 Modern, responsive dark UI
 
-Your project is live at:
+---
 
-**[https://vercel.com/dumebiis-projects/v0-vizify](https://vercel.com/dumebiis-projects/v0-vizify)**
+## 🛠️ Tech Stack
 
-## Build your app
+| Layer       | Tech                     |
+|------------|--------------------------|
+| Frontend    | React + TailwindCSS      |
+| Backend     | Supabase (Auth + DB)     |
+| AI Engine   | Grok AI (via API)        |
+| Hosting     | Vercel (optional)        |
+| File Support| `.pdf`, `.docx`, `.txt`  |
 
-Continue building your app on:
+---
 
-**[https://v0.dev/chat/projects/zR9kZ6YBq3n](https://v0.dev/chat/projects/zR9kZ6YBq3n)**
+## 🔧 Setup Locally
 
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+```bash
+git clone https://github.com/Dumebii/research-assistant.git
+cd research-assistant
+npm install
+npm run dev
