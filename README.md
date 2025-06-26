@@ -32,7 +32,7 @@ ResearchAI Assistant is a web-based tool that transforms academic papers into ac
 
 ## 🔧 Setup Locally
 
-```bash
+\`\`\`bash
 git clone https://github.com/Dumebii/research-assistant.git
 cd research-assistant
 npm install

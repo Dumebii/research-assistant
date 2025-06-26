@@ -10,6 +10,8 @@ import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
 import Navbar from "@/components/navbar"
 import { SparklesCore } from "@/components/sparkles"
+import Link from "next/link"
+import { Presentation, Mic, BarChart3 } from "lucide-react"
 
 interface AnalysisResult {
   title: string
@@ -361,16 +363,30 @@ export default function UploadPage() {
 
                     {/* Action Buttons */}
                     <div className="flex flex-wrap gap-4 pt-4">
-                      <Button className="bg-purple-600 hover:bg-purple-700">Generate Presentation</Button>
-                      <Button variant="outline" className="text-white border-gray-600 hover:bg-white/10">
-                        Create Podcast
-                      </Button>
-                      <Button variant="outline" className="text-white border-gray-600 hover:bg-white/10">
-                        Visual Summary
-                      </Button>
-                      <Button variant="outline" className="text-white border-gray-600 hover:bg-white/10">
-                        Executive Summary
-                      </Button>
+                      <Link href="/generate/presentation">
+                        <Button className="bg-purple-600 hover:bg-purple-700">
+                          <Presentation className="w-4 h-4 mr-2" />
+                          Generate Presentation
+                        </Button>
+                      </Link>
+                      <Link href="/generate/podcast">
+                        <Button variant="outline" className="text-white border-gray-600 hover:bg-white/10">
+                          <Mic className="w-4 h-4 mr-2" />
+                          Create Podcast
+                        </Button>
+                      </Link>
+                      <Link href="/generate/visual-summary">
+                        <Button variant="outline" className="text-white border-gray-600 hover:bg-white/10">
+                          <BarChart3 className="w-4 h-4 mr-2" />
+                          Visual Summary
+                        </Button>
+                      </Link>
+                      <Link href="/generate/executive-summary">
+                        <Button variant="outline" className="text-white border-gray-600 hover:bg-white/10">
+                          <FileText className="w-4 h-4 mr-2" />
+                          Executive Summary
+                        </Button>
+                      </Link>
                     </div>
                   </CardContent>
                 </Card>

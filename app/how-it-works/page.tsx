@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import Navbar from "@/components/navbar"
 import { SparklesCore } from "@/components/sparkles"
+import Link from "next/link"
 
 const steps = [
   {
@@ -134,9 +135,11 @@ export default function HowItWorksPage() {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="text-center mt-16"
           >
-            <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-8">
-              Get Started Now
-            </Button>
+            <Link href="/upload">
+              <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-8">
+                Get Started Now
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </div>
